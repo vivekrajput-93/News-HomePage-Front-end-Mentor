@@ -1,0 +1,151 @@
+:root {
+   
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+    
+    
+    
+}
+
+
+.hero {
+    background-image: url(../images/image-web-3-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    block-size: 300px;
+    width: 76%;
+    position: relative;
+    left: 70px;
+    top: 60px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    position: relative;
+    width: 76%;
+    margin-top: 100px;
+    left: 70px;
+    margin-bottom: 30px;
+}
+
+.logo h1 {
+    font-size: 50px;
+    width: 40%;
+    font-weight: bolder;
+
+}
+
+.logo .read {
+    padding: 1rem;
+    width: 50%;
+    color: var(--Dark-grayish-blue);
+    line-height: 25px;
+}
+
+.logo .read button {
+    padding: 1rem 3rem 1rem;
+    margin-top: 1rem;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--Off-white);
+    background-color: var(--Soft-red);
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+}
+
+.logo .read button:hover {
+    transition: 0.5s ease-in;
+    background-color: var(--Very-dark-blue);
+    color: var(--Grayish-blue);
+}
+
+.head {
+        display: flex;
+}
+
+
+
+.new {
+    width: 64%;
+    position: relative;
+    top: 60px;
+    right: 80px;
+    height: 91vh;
+    background-color: var(--Very-dark-blue);
+    color: aliceblue;
+}
+
+.new h1 {
+    padding: 1rem;
+    color: var(--Soft-orange);
+}
+
+.new article {
+    padding: 2rem;
+    color: var();
+    margin-bottom: 1rem;
+}
+
+.new article h3 {
+    color: var(--Off-white);
+    padding-bottom: 5px;
+}
+
+.new article p {
+    color: var(--Grayish-blue);
+}
+
+.new hr {
+    display: block;
+    width: 90%;
+    margin: auto;
+    outline: none;
+    border: 1px solid var(--Grayish-blue);
+}
+
+@media screen and (max-width:1240px) {
+    .hero{
+        max-width: 70%;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo h1 {
+        width: 90%;
+        font-size: 40px;
+        font-weight: bold;
+        padding-top: 0;
+    }
+
+    .logo .read {
+        width: 90%;
+        margin-left: -10px;
+
+    }
+
+    .read p {
+        width: 110%;
+    }
+
+    .new {
+        width: 90%;
+        margin-left: 30px;
+        height: 100vh;
+    }
+}
+
